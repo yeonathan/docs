@@ -85,13 +85,13 @@ $ docker run -d \
   -p 26257:26257 \
   -p 8080:8080 \
   -v roach:/cockroach/cockroach-data \
-  cockroachdb/cockroach:latest-v20.1 start-single-node \
+  cockroachdb/cockroach:latest-v23.1 start-single-node \
   --insecure
 
 # ... output omitted ...
 ```
 
-Notice a clever use of the tag `latest-v20.1` to make sure that we are pulling the latest patch version of 20.1.  The diversity of available tags depend on the image maintainer. Here, our intent was to have the latest patched version of CockroachDB while not straying too far away from the known working version as the time goes by. To see the tags available for CockroachDB image, we went to [CockroachDB page on Docker Hub](https://hub.docker.com/r/cockroachdb/cockroach/tags).
+Notice a clever use of the tag `latest-v23.1` to make sure that we are pulling the latest patch version of 20.1.  The diversity of available tags depend on the image maintainer. Here, our intent was to have the latest patched version of CockroachDB while not straying too far away from the known working version as the time goes by. To see the tags available for CockroachDB image, we went to [CockroachDB page on Docker Hub](https://hub.docker.com/r/cockroachdb/cockroach/tags).
 
 ### Configure the database engine
 
