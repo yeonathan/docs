@@ -75,7 +75,14 @@ When choosing a name for a network or a managed volume, it's best to choose a na
 
 ### Start the database engine
 
-Now that the housekeeping chores are done, we can run CockroachDB in a container and attach it to the volume and network we had just created. When you run the folllowing command, Docker will pull the image from Docker Hub and run it for you locally:
+Now that the housekeeping chores are done, we can run CockroachDB in a container and attach it to the volume and network we had just created. When you run the folllowing command, 
+
+You need to pull the image from Docker Hub and run it with this command :
+
+```console
+$ docker pull cockroachdb/cockroach:latest-v23.1
+
+Now run : 
 
 ```console
 $ docker run -d \
